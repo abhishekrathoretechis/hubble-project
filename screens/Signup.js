@@ -178,11 +178,11 @@ const Signup = ({navigation}) => {
             Login
           </Text>
         </TouchableOpacity>
-        {/* <TouchableOpacity onPress={()=> {
+        <TouchableOpacity onPress={()=> {
             navigation.navigate('Home')
         }}>
             <Text style={{color:'white'}}>Home</Text>
-        </TouchableOpacity> */}
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );

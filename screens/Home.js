@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+
+
 const Home = ({ navigation }) => {
-  const [images,setImages] = useState([]); 
+  const [images,setImages] = useState([]);   
   
   
 
@@ -72,6 +74,7 @@ const Home = ({ navigation }) => {
             
           </View>
         </View>
+       
       <ScrollView showsVerticalScrollIndicator={false} >
         {images.map((imageUri, index) => (
           <View key={index} style={styles.imageContainer}>
@@ -140,7 +143,9 @@ const styles = StyleSheet.create({
     backgroundColor:'black',
     justifyContent:'center',
     alignItems:'center'
-  }
+  },
+ 
 });
 
 export default Home;
+  
